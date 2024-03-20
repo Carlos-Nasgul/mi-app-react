@@ -1,22 +1,24 @@
 //PRIMER COMPONENTE
 
-import React from 'react';
+//import React from 'react';
 import '../hojas-de-estilo/Testimonio.css'
 
 
-function Testimonio() {
+function Testimonio(props) {
     return (
         <div className='contenedor-testimonio'>
-            <img className='imagen-testimonio' src={require('../imagenes/hacker.png')} />
+            <img className='imagen-testimonio' src={require(`../imagenes/${props.imagen}.png`)} alt='foto de perfil' />
             <div className='contenido-testimonio'>
-                <p className='nombre-testimonio'>Carlos García</p>
-                <p className='cargo-testimonio'>Desarrollo web</p>
-                <p className='texto-testimonio'>Estudiante de bla bla bla,
-                    danza y teatro y los domingos matemáticas</p>
+                <p className='nombre-testimonio'>{props.nombre} en {props.pais}</p>
+                <p className='cargo-testimonio'>{props.cargo}</p>
+                <p className='texto-testimonio'>"{props.testimonio}"</p>
             </div>
         </div>
     );
 }
 
 export default Testimonio;
+
+console.log('Hola React');
+
 
