@@ -1,6 +1,6 @@
 //PRIMER COMPONENTE
 
-//import React from 'react';
+//import React from 'react'; YA NO HACE FALTA DESDE 2020
 import '../hojas-de-estilo/Testimonio.css'
 
 
