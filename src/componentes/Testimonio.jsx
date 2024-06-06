@@ -1,6 +1,6 @@
 //PRIMER COMPONENTE
 
-//import React from 'react'; YA NO HACE FALTA DESDE 2020
+import React from "react"; // YA NO HACE FALTA DESDE 2020
 
 import "../hojas-de-estilo/Testimonio.css";
 
@@ -26,3 +26,20 @@ function Testimonio(props) {
 export default Testimonio;
 
 console.log("Hola React");
+
+//SEGUNDO COMPONENTE
+export function Fichero(props) {
+  return (
+    <Fichero
+      nombre="Carlos García"
+      pais="España"
+      imagen="foto-del-comodin"
+      cargo="Estudiante de Desarrollo web"
+      testimonio="Hola, aunque soy profesor de autoescuela de profesión
+        soy un apasionado de la programación, el desarrollo y el diseño web,
+        y en gran parte gracias a freeCodeCamp."
+    />
+  );
+}
+
+//export default Fichero;
